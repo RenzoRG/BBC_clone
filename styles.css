@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+/* Navbar section - mobile first */
+
+nav {
+  color: white;
+  background-color: black;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.sign-in-text,
+.navbar-center,
+.dots-btn {
+  display: none;
+}
+
+/* Main body section */
+
+
+/* Footer section */
