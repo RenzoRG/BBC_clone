@@ -1,10 +1,21 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, freesans, sans-serif;
 }
 
-/* Navbar section - mobile first */
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
-nav {
+/* Navbar section - PC */
+
+header {
   color: white;
   background-color: black;
   height: 64px;
@@ -14,17 +25,52 @@ nav {
   align-items: center;
 }
 
-.navbar-left,
-.navbar-center,
-.navbar-right {
+.header-left-grouping,
+.header-right-grouping,
+.links-menu {
   display: flex;
   flex-direction: row;
 }
 
-.sign-in-text,
-.navbar-center,
-.dots-btn {
+.links-menu {
+  list-style: none;
+}
+
+.links-menu > li {
+  margin-left: 5px;
+}
+
+.navbar-buttons-and-search-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.burger-btn-styling {
   display: none;
+}
+
+/* three dots button */
+
+.search-btn {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-left: 10px;
+  width: 225px;
+  height: 40px;
+  background-color: #202224;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+}
+
+.search-btn:hover {
+  background-color: rgb(58, 58, 58);
+}
+
+.magnifying-glass {
+  width: 20px;
+  height: 20px;
 }
 
 /* Main body section */
