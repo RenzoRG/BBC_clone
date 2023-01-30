@@ -101,6 +101,54 @@ header {
 
 /* Main body section */
 
+main {
+  max-width: 1248px;
+  margin: auto;
+}
+
+.welcome-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section-container {
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr 1fr;
+  gap: 20px;
+  height: 346.5px;
+  color: white;
+}
+
+.main-article {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  position: relative;
+}
+
+.main-section-article {
+  height: calc(346.5px / 2 - 10px);
+  position: relative;
+}
+
+article > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+}
+
+.content-container > a {
+  color: white;
+  text-decoration: none;
+  border-left: 2px solid red;
+  padding-left: 5px;
+}
+
 
 
 /* Footer section */
