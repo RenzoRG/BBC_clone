@@ -13,43 +13,67 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-/* Navbar section - PC */
+/* Navbar section */
+.header-styling,
+.header-left-grouping,
+.header-right-grouping,
+nav,
+.links-menu,
+.navbar-btns,
+.burger-btn,
+.dots-btn,
+.search-bbc,
+.search-btn {
+  display: flex;
+  flex-direction: row;
+}
 
 header {
   color: white;
   background-color: black;
   height: 64px;
-  display: flex;
-  flex-direction: row;
+}
+
+.header-styling {
+  margin: auto;
+  max-width: 1248px;
   justify-content: space-around;
   align-items: center;
 }
 
-.header-left-grouping,
-.header-right-grouping,
-.links-menu {
-  display: flex;
-  flex-direction: row;
+/* header - logo and sign in btn */
+.bbc-logo {
+  margin-right: 20px;
 }
+
+.sign-in {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 900;
+  width: 136px;
+  display: flex;
+  align-items: center;
+}
+
+/* header - navbar */
 
 .links-menu {
   list-style: none;
+  font-size: 0.8em;
+  font-weight: 900;
 }
 
 .links-menu > li {
-  margin-left: 5px;
+  margin: 1rem;
+  cursor: pointer;
 }
 
-.navbar-buttons-and-search-btn {
-  display: flex;
-  flex-direction: row;
-}
-
-.burger-btn-styling {
+.burger-btn {
   display: none;
 }
 
-/* three dots button */
+/* header - search bbc btn */
 
 .search-btn {
   display: flex;
@@ -61,6 +85,8 @@ header {
   background-color: #202224;
   color: white;
   text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 900;
   align-items: center;
 }
 
@@ -74,6 +100,7 @@ header {
 }
 
 /* Main body section */
+
 
 
 /* Footer section */
