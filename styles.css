@@ -13,7 +13,6 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-/* Navbar section */
 .header-styling,
 .header-left-grouping,
 .header-right-grouping,
@@ -23,10 +22,13 @@ nav,
 .burger-btn,
 .dots-btn,
 .search-bbc,
-.search-btn {
+.search-btn,
+.article-container {
   display: flex;
   flex-direction: row;
 }
+
+/* Navbar section */
 
 header {
   color: white;
@@ -197,8 +199,75 @@ article > img {
   filter: brightness(120%)
 }
 
-/* Main - secondary categories */
+/* Main - secondary categories of news */
 
+.news-section,
+.sport-section {
+  margin-top: 2em;
+}
 
+.category-section-name > a{
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(58, 58, 58);
+}
+
+.category-section-name > .news {
+  padding-left: 5px;
+  border-left: 3px solid red;
+}
+
+.category-section-name > .sport {
+  padding-left: 5px;
+  border-left: 3px solid #ffd930;
+}
+
+.article-container {
+  gap: 1.5%;
+  height: 380px;
+}
+
+.article-container > article {
+  flex: 1 1 0px;
+}
+
+.article-content {
+  height: 33%;
+}
+
+.article-content > h3 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  height: 40%;
+  font-size: 1.4em;
+}
+
+.article-content > p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  height: 40%;
+  font-size: 1em;
+}
+
+.article-content > a {
+  height: 20%;
+  text-decoration: none;
+  color: rgb(158, 157, 157);
+}
+
+.article-content > .news-link {
+  border-left: 2px solid red;
+  padding-left: 5px;
+}
+
+.article-content > .sports-link {
+  border-left: 2px solid #ffd930;
+  padding-left: 5px;
+}
+
+.article-container > article > img {
+  height: 66%;
+  object-fit: cover;
+}
 
 /* Footer section */
